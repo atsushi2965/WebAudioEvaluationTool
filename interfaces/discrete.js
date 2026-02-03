@@ -128,6 +128,7 @@ function loadTest(page) {
     var commentBoxPrefix = "Comment on track";
     var loopPlayback = page.loop;
     feedbackHolder.innerHTML = "";
+    $(sliderGrid).find('.discrete-row').remove();
 
     if (interfaceObj.length > 1) {
         console.log("WARNING - This interface only supports one <interface> node per page. Using first interface node");
@@ -479,3 +480,4 @@ function pageXMLSave(store, pageSpecification) {
     // pageSpecification is the current page node configuration
     // To create new XML nodes, use storage.document.createElement();
 }
+
