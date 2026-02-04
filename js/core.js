@@ -1332,6 +1332,7 @@ function stateMachine() {
         fixed.forEach(function (page) {
             pagePool.splice(page.position, 0, page);
         });
+        pagePool.splice(specification.poolSize);
 
         // Now process the pages
         pagePool.forEach(function (page, i) {
